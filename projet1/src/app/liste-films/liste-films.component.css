@@ -1,0 +1,10 @@
+h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: blue;
+}
+img{
+width: 250px;
+height: 400px;
+}
+.bloc { display: flex; justify-content: space-around; }
+.image { display: block; margin-left: auto; margin-right: auto; }
