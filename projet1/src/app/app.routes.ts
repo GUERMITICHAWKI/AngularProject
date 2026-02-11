@@ -8,5 +8,6 @@ export const routes: Routes = [
 {path : 'chemin1', component : Comp1Component},
 {path : 'chemin2', component : Comp2Component},
 {path: 'cinema', component: ListeFilmsComponent},
+{path: '', redirectTo: 'chemin1', pathMatch: 'full'},
 {path : '**', component : ErreurComponent},
 ];
