@@ -1,6 +1,6 @@
 <h2>liste de films</h2>
 <div class="bloc">
-    <div *ngFor="let f of tabFilms ; let index=index">
+    <div *ngFor="let f of tabFilms ; let index=index" [ngStyle]="{backgroundColor: getColor(f.nbJaime,f.nbJeNaimeps)}">
     <h4>Nom du film : {{f.nomFilm}} </h4>
      <div *ngIf="f.disponible; then thenBlock else elseBlock"></div>
       <ng-template #thenBlock>{{f.nomFilm}} est disponible </ng-template><br>

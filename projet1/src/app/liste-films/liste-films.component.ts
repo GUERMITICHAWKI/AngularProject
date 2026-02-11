@@ -34,5 +34,14 @@ onJaimePas(i: number) {
 this.tabFilms[i].nbJeNaimeps++;
 console.log('J\'aime pas ce film ' + this.tabFilms[i].nbJeNaimeps);
 }
+getColor(x:number,y:number){
+if(x>y)
+return "#1c8454";
+else
+if(x==y)
+return "#ffffff";
+else
+return "#dc3444";
+}
 
 }
